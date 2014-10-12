@@ -10,10 +10,15 @@ namespace GTDTestConsole
   {
     static void Main(string[] args)
     {
-      Task task = new Task("need to do task 1");
-      Task task2 = new Task("need to do task 2");
-      task.subTasks.Add(task2);
-      Console.WriteLine("added task2 to task1");
+      Task t1 = new Project("task1");
+      t1.Add(new TaskItem("task2"));
+      var t3 = new Project("subtask 3");
+      t1.Add(t3);
+      t3.Add(new TaskItem("subtask 3a"));
+      t3.Add(new TaskItem("subtask 3b"));
+
+      t1.Display(0);
+
     }
   }
 }

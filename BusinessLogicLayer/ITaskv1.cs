@@ -6,12 +6,14 @@ using System.Text;
 
 namespace BusinessLogicLayer
 {
-  public interface ITask : IEnumerable
+  public interface ITaskv1 : IEnumerable<ITaskv1>
   {
     string name { get; set; }
     Boolean complete { get; set; }
     DateTime dueDate { get; set; }
-    List<ITask> subTasks { get; set; }
+    List<ITaskv1> subTasks { get; set; }
+    //ICollection<ITask> subTasks { get; set; }
+    //ITask parentTask { get; set; }
 
     void MarkComplete();
 

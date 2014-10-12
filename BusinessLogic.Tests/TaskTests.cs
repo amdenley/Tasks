@@ -5,7 +5,7 @@ using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using BusinessLogicLayer;
 
-namespace TaskTests
+namespace BusinessLogic.Tests
 {
   /// <summary>
   /// Summary description for TaskTests
@@ -63,24 +63,9 @@ namespace TaskTests
     [TestMethod]
     public void Creation()
     {
-      Task task = new Task("task 1");
-      Assert.IsNotNull(task);
+      Task t1 = new Project("task1");
+      Assert.IsNotNull(t1);
     }
-    [TestMethod]
-    public void MarkComplete()
-    {
-      Task task = new Task("task 1");
-      task.MarkComplete();
-      Assert.AreEqual(true, task.complete);
-    }
-    [TestMethod]
-    public void TaskHasChildTask()
-    {
-      Task task = new Task("task 1");
-      Task subTask = new Task("task 1a");
-      task.subTasks.Add(subTask);
-      Assert.AreEqual(1, task.subTasks.Count());
-    }
-      
+
   }
 }
