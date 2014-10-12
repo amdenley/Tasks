@@ -6,8 +6,8 @@
     <ProjectGuid>{54C6CFAC-1FD6-48B4-856F-382050C3C065}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TaskTests</RootNamespace>
-    <AssemblyName>TaskTests</AssemblyName>
+    <RootNamespace>BusinessLogic.Tests</RootNamespace>
+    <AssemblyName>BusinessLogic.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -57,7 +57,7 @@
     <Compile Include="TaskTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GTD\BusinessLogicLayer.csproj">
+    <ProjectReference Include="..\BusinessLogicLayer\BusinessLogicLayer.csproj">
       <Project>{aa9645e0-fd61-49f9-9080-8c5e35701db9}</Project>
       <Name>BusinessLogicLayer</Name>
     </ProjectReference>

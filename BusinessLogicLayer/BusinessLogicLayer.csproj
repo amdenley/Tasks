@@ -7,8 +7,8 @@
     <ProjectGuid>{AA9645E0-FD61-49F9-9080-8C5E35701DB9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AMD.Tasks</RootNamespace>
-    <AssemblyName>GTD</AssemblyName>
+    <RootNamespace>BusinessLogicLayer</RootNamespace>
+    <AssemblyName>AMD.Tasks.BusinessLogicLayer</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

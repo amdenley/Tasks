@@ -7,8 +7,8 @@
     <ProjectGuid>{75D79A68-24D6-4024-956E-0D7E39DA0DA8}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GTDTestConsole</RootNamespace>
-    <AssemblyName>GTDTestConsole</AssemblyName>
+    <RootNamespace>TestConsole</RootNamespace>
+    <AssemblyName>TestConsole</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
