@@ -1,11 +1,12 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 namespace BusinessLogicLayer
 {
-  public class Project : Task
+  public class Project : Task, IEnumerable<Task>
   {
     private List<Task> _children = new List<Task>();
 
@@ -30,6 +31,30 @@ namespace BusinessLogicLayer
       {
         component.Display(depth + 2);
       }
+    }
+
+    public override Task GetChild(int index)
+    {
+      return _children[index];
+    }
+
+    public override IList<Task> GetChildren()
+    {
+      return _children;
+    }
+
+    public IEnumerator<Task> GetEnumerator()
+    {
+      foreach (Task child in _children)
+      {
+        yield return child;
+      }
+        
+    }
+
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+      return GetEnumerator();
     }
   }
 }

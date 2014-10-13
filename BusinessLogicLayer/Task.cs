@@ -27,5 +27,20 @@ namespace BusinessLogicLayer
     {
       throw new NotSupportedException();
     }
+
+    public virtual Task GetChild(int index)
+    {
+      throw new NotSupportedException();
+    }
+
+    public virtual IList<Task> GetChildren()
+    {
+      throw new NotSupportedException();
+    }
+
+    public override string ToString()
+    {
+      return this._name.ToString();
+    }
   }
 }
